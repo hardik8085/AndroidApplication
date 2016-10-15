@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Inclass2A</string>
+    <string name="ToInches">To Inches</string>
+    <string name="ToFeet">To Feet</string>
+    <string name="ToMiles">To Miles</string>
+    <string name="ClearAll">Clear All</string>
+</resources>
