@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Hardik Thakkar
+Sindhuja vemulapalli
+Ruoshan Qin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="true">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/createticket"
+        android:id="@+id/button_createticket"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_editticket"
+        android:layout_alignEnd="@+id/button_editticket" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editticket"
+        android:id="@+id/button_editticket"
+        android:layout_below="@+id/button_createticket"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteticket"
+        android:id="@+id/button_deleteticket"
+        android:layout_marginTop="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewticket"
+        android:id="@+id/button_viewticket"
+        android:layout_marginTop="164dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:id="@+id/button_Itenaryfinish"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="210dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="72dp"
+        android:src="@android:drawable/ic_menu_call"
+        android:background="#beeaf1"
+        android:layout_below="@+id/button_Itenaryfinish"
+        android:layout_toLeftOf="@+id/textView_customerCare"
+        android:layout_toStartOf="@+id/textView_customerCare" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callcenter"
+        android:id="@+id/textView_customerCare"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

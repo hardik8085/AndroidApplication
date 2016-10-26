@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Hardik Thakkar
+Sindhuja vemulapalli
+Ruoshan Qin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ticketreservation.PrintTicket">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itenary"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:id="@+id/textView2"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_itenaryName"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/source"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_ItenarySource"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView_itenaryName"
+        android:layout_alignStart="@+id/textView_itenaryName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destination"
+        android:id="@+id/textView4"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_itenaryDestination"
+        android:layout_alignRight="@+id/textView_ItenarySource"
+        android:layout_alignEnd="@+id/textView_ItenarySource"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView_itenaryName"
+        android:layout_alignStart="@+id/textView_itenaryName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/departure"
+        android:id="@+id/textView5"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_itenaryDepature"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView_itenaryReturn"
+        android:layout_alignStart="@+id/textView_itenaryReturn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnDate"
+        android:id="@+id/textView6"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_itenaryReturn"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:id="@+id/button_Itenaryfinish"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginTop="62dp" />
+
+</RelativeLayout>
