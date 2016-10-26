@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Assignment:HomeWork1
+ File name:ComputerCalculator
+ Full Name:-Hardik Thakkar
+           Ruoshan Qin
+           Sindhuja vemulapalli
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText_budget"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory"
+        android:id="@+id/textView_Memory"
+        android:layout_marginTop="50dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/radioGroup"
+        android:layout_toRightOf="@+id/textView_Memory"
+        android:layout_toEndOf="@+id/textView_Memory"
+        android:layout_alignTop="@+id/textView_Memory"
+        android:layout_alignBottom="@+id/textView_Memory">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb2"
+            android:id="@+id/radioButton_2gb"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb4"
+            android:id="@+id/radioButton_4gb" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb8"
+            android:id="@+id/radioButton_8gb" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb16"
+            android:id="@+id/radioButton_16gb" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storage"
+        android:id="@+id/textView_storage"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView_Memory"
+        android:layout_alignLeft="@+id/textView_Memory"
+        android:layout_alignStart="@+id/textView_Memory" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:id="@+id/radiogroup_storage"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignTop="@+id/textView_storage"
+        android:layout_alignBottom="@+id/textView_storage">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb250"
+            android:id="@+id/radioButton_250gb"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb500"
+            android:id="@+id/radioButton_500gb" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gb750"
+            android:id="@+id/radioButton_750gb" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tb1"
+            android:id="@+id/radioButton_1tb" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accessories"
+        android:id="@+id/textView_accesories"
+        android:layout_alignBaseline="@+id/checkBox_mouse"
+        android:layout_alignBottom="@+id/checkBox_mouse"
+        android:layout_alignLeft="@+id/textView_storage"
+        android:layout_alignStart="@+id/textView_storage" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flashdrive"
+        android:id="@+id/checkBox_flashDrive"
+        android:layout_alignTop="@+id/checkBox_mouse"
+        android:layout_toRightOf="@+id/checkBox_CoolingPad"
+        android:layout_toEndOf="@+id/checkBox_CoolingPad"
+         />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mouse"
+        android:id="@+id/checkBox_mouse"
+        android:layout_below="@+id/radiogroup_storage"
+        android:layout_toRightOf="@+id/textView_accesories"
+        android:layout_toEndOf="@+id/textView_accesories"
+        android:layout_marginTop="42dp"
+         />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coolingpad"
+        android:id="@+id/checkBox_CoolingPad"
+        android:layout_below="@+id/checkBox_mouse"
+        android:layout_toRightOf="@+id/textView_accesories"
+        android:layout_toEndOf="@+id/textView_accesories"
+         />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carryingcase"
+        android:id="@+id/checkBox_carryingCase"
+        android:layout_above="@+id/textView"
+        android:layout_toRightOf="@+id/checkBox_CoolingPad"
+        android:layout_toEndOf="@+id/checkBox_CoolingPad"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip"
+        android:id="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/checkBox_CoolingPad"
+        android:layout_alignLeft="@+id/textView_accesories"
+        android:layout_alignStart="@+id/textView_accesories" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_tip"
+        android:maxWidth="50dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/checkBox_CoolingPad"
+        android:layout_alignStart="@+id/checkBox_CoolingPad"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toLeftOf="@+id/textView3_progress"
+        android:layout_toStartOf="@+id/textView3_progress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView3_progress"
+        android:layout_alignTop="@+id/seekBar_tip"
+        android:layout_alignRight="@+id/checkBox_carryingCase"
+        android:layout_alignEnd="@+id/checkBox_carryingCase" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_delivery"
+        android:checked="true"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/checkBox_flashDrive"
+        android:layout_alignStart="@+id/checkBox_flashDrive" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:id="@+id/button_Calculate"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/radiogroup_storage"
+        android:layout_alignStart="@+id/radiogroup_storage"
+        android:onClick="Button_Calculate"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_reset"
+        android:layout_alignTop="@+id/button_Calculate"
+        android:layout_alignLeft="@+id/switch_delivery"
+        android:layout_alignStart="@+id/switch_delivery"
+        android:text="@string/reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:id="@+id/textView3_price"
+        android:enabled="false"
+        android:editable="false"
+        android:layout_below="@+id/button_Calculate"
+        android:textSize="20dp"
+        android:textIsSelectable="true"
+        android:layout_alignLeft="@+id/textView_accesories"
+        android:layout_alignStart="@+id/textView_accesories"
+        android:layout_above="@+id/textView_status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:id="@+id/textView_status"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewstatusop"
+        android:layout_alignTop="@+id/textView_status"
+        android:layout_alignRight="@+id/button_reset"
+        android:layout_alignEnd="@+id/button_reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/pricevalues"
+        android:id="@+id/textViewprice"
+        android:layout_alignTop="@+id/textView3_price"
+        android:layout_alignRight="@+id/button_reset"
+        android:layout_alignEnd="@+id/button_reset"
+        android:layout_above="@+id/textViewstatusop"
+        android:layout_alignLeft="@+id/seekBar_tip"
+        android:layout_alignStart="@+id/seekBar_tip"
+        android:password="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/budget"
+        android:id="@+id/textViewbudget"
+        android:layout_alignTop="@+id/editText_budget"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editText_budget"
+        android:paddingTop="8dp" />
+
+</RelativeLayout>
