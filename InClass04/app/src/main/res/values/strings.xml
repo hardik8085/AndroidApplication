@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InClass04</string>
+    <string name="numbers">Numbers</string>
+    <string name="uppercaseletters">UpperCase Letters</string>
+    <string name="lowercaseletter">Lowercase Letters</string>
+    <string name="specialcharacters">Special Characters</string>
+    <string name="generatePasswordThread">Generate Password(Thread)</string>
+    <string name="generatePasswordAsync">Generate Password(Async Task)</string>
+</resources>
